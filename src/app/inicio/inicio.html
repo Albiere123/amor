@@ -1,0 +1,25 @@
+
+<a class="container-central">
+<div class="container-carrossel">
+  <img [src]="fotos[indiceAtivo()]" 
+       class="foto-slide" 
+       alt="Foto Carrossel"
+       (click)="aoClicarNaImagem()">
+
+  <div *ngIf="mostrarFrase()" class="frase-amor">
+      Eu te amo! ❤️
+  </div>
+  <div class="indicadores">
+    <span *ngFor="let f of fotos; let i = index" 
+          [class.ativo]="i === indiceAtivo()" 
+          (click)="irParaFoto(i)"
+          style="cursor: pointer;">
+    </span>
+  </div>
+  
+</div> 
+<div class="contador-container">
+  <h3>Juntos há:</h3>
+  <p class="tempo-texto">{{ tempoJuntos() }}</p>
+</div>
+</a>

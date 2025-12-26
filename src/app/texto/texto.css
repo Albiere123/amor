@@ -1,0 +1,17 @@
+.container-central {
+    position: absolute;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 15vh;
+    width: 100%;
+}
+
+
+p {
+    position: relative;
+    left: 8vh;
+    max-width: 190vh;
+    font-size: 3vh;
+}

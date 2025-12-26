@@ -16,6 +16,7 @@ p {
 .caixa {
     background-color: aliceblue;
     top: 0vh;
+    border: 3vh;
     height: 6vh;
     width: 12vh;
     display: flex;
@@ -25,8 +26,8 @@ p {
 }
 
 .caixa:hover {
-    height: 8vh;
-    width: 15vh;
+    height: 7vh;
+    width: 10vh;
     transition: 1s;
 }
 
